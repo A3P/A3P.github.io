@@ -1,29 +1,31 @@
 * {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Arimo', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 100%;
     line-height: 1;
-    text-align: center;
 }
 
 header {
     position: relative;
     box-sizing: border-box;
-    background-image: url("header.jpg");
+    background-image: url("header2.jpg");
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     border-bottom: 4px solid transparent;
     -webkit-border-image: -webkit-linear-gradient(top, hsl(0, 80%, 70%), #bada55); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
     border-image: linear-gradient(to bottom right, #6f3824, transparent);
     border-image-slice: 1;
+    text-align: center;
+    margin-bottom: 50px;
     /*transform: translate(200px, 200px)*/
+    overflow: hidden;
 }
 
-h1 {
+#name {
     position: absolute;
     background-position: center;
     top: 50%;
@@ -37,4 +39,14 @@ h1 {
     -webkit-border-image: -webkit-linear-gradient(top, hsl(0, 80%, 70%), #bada55); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
     border-image: linear-gradient(to bottom right, #6f3824, transparent);
     border-image-slice: 1;
+}
+
+#summary {
+    text-align: center;
+}
+
+.about-me {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
 }
