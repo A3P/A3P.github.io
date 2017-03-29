@@ -1,12 +1,8 @@
-window.addEventListener("DOMContentLoaded", function() {
-
-});
-
-
 
 
 var scroll_position = 0;
 var ticking = false;
+
 var header = document.getElementsByTagName('header')[0];
 var heading = document.getElementById('name');
 
@@ -17,6 +13,7 @@ window.addEventListener('scroll', function(e) {
     if (!ticking)  {
         window.requestAnimationFrame(function() {
             offsetHeader();
+            fadeBorders();
             ticking = false;
         });
     }
@@ -25,4 +22,19 @@ window.addEventListener('scroll', function(e) {
 
 function offsetHeader() {
     heading.style.top = 50 + (50*scroll_position/header.scrollHeight) + "%";
+}
+
+function fadeBorders() {
+    heading.style.borderImageSource =
+        "linear-gradient(" +
+        (135) +  "deg," +
+        " #6f3824 " + ( 100 - 400*scroll_position/header.scrollHeight) + "% ," +
+        "transparent " + ( 150 - 150*scroll_position/header.scrollHeight) + "% )";
+
+    header.style.borderImageSource =
+        "linear-gradient(" +
+        (135) +  "deg," +
+        " #6f3824 " + ( 0 + 50*scroll_position/header.scrollHeight) + "% ," +
+        "transparent " + ( 10 + 90*scroll_position/header.scrollHeight) + "% )";
+
 }

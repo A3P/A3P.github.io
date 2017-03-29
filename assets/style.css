@@ -1,5 +1,5 @@
 * {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 100%;
@@ -17,7 +17,7 @@ header {
     height: 100vh;
     border-bottom: 4px solid transparent;
     -webkit-border-image: -webkit-linear-gradient(top, hsl(0, 80%, 70%), #bada55); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-    border-image: linear-gradient(to bottom right, #6f3824, transparent);
+    border-image: linear-gradient(135deg, #6f3824, transparent);
     border-image-slice: 1;
     text-align: center;
     margin-bottom: 50px;
@@ -33,11 +33,11 @@ header {
     transform: translate(-50%, -50%);
     color: #6f3824;
     font-size: 3.5em;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.03em;
     padding: 0.5em;
     border: 6px solid #6f3824;
-    -webkit-border-image: -webkit-linear-gradient(top, hsl(0, 80%, 70%), #bada55); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-    border-image: linear-gradient(to bottom right, #6f3824, transparent);
+    -webkit-border-image: -webkit-linear-gradient(135deg, #6f3824, transparent);
+    border-image: linear-gradient(135deg, #6f3824 100%, transparent );
     border-image-slice: 1;
 }
 
