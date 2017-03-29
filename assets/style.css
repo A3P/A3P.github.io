@@ -41,12 +41,72 @@ header {
     border-image-slice: 1;
 }
 
+.fa-angle-double-down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 2.5em;
+    color: #6f3824;
+}
+
 #summary {
     text-align: center;
+    margin-bottom: 80px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/*h2::after {
+    display: block;
+    margin: 20px auto 0;
+    content: '';
+    width: 300px;
+    height: 3px;
+    background-color: #6f3824;
+}*/
+.about-me::before {
+    display: block;
+    margin: 40px auto;
+    content: '';
+    max-width: 400px;
+    height: 2px;
+    background-color: #6f3824;
+}
+
+.about-me::after {
+    display: block;
+    margin: 40px auto;
+    content: '';
+    max-width: 400px;
+    height: 2px;
+    background-color: #6f3824;
 }
 
 .about-me {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.2em;
+    text-align: left;
+    /*border-top: 2px solid #6f3824;
+    border-bottom: 2px solid #6f3824;*/
+    /*padding: 40px;*/
+}
+
+#projects-flex {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    height: 200px;
+    width: 300px;
+    background-color: silver;
+    margin: 10px;
 }
