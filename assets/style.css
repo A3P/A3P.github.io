@@ -9,7 +9,7 @@
 header {
     position: relative;
     box-sizing: border-box;
-    background-image: url("header2.jpg");
+    background-image: url("header2-low-res.jpg");
     background-size: cover !important;
     background-position: center;
     background-attachment: fixed;
