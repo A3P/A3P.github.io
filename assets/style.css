@@ -72,7 +72,7 @@ h2 {
     display: block;
     margin: 40px auto;
     content: '';
-    max-width: 400px;
+    max-width: 50%;
     height: 2px;
     background-color: #6f3824;
 }
@@ -81,7 +81,7 @@ h2 {
     display: block;
     margin: 40px auto;
     content: '';
-    max-width: 400px;
+    max-width: 50%;
     height: 2px;
     background-color: #6f3824;
 }
@@ -89,6 +89,7 @@ h2 {
 .about-me {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 30px;
     font-size: 1.2em;
     text-align: left;
     /*border-top: 2px solid #6f3824;
@@ -109,4 +110,10 @@ h2 {
     width: 300px;
     background-color: silver;
     margin: 10px;
+    overflow: hidden;
+}
+
+.project img {
+    min-height: 100%;
+    max-width: 100%;
 }
