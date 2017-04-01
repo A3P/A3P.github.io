@@ -10,9 +10,10 @@ header {
     position: relative;
     box-sizing: border-box;
     background-image: url("header2.jpg");
-    background-size: cover;
-    background-position: bottom;
+    background-size: cover !important;
+    background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     border-bottom: 4px solid transparent;
@@ -56,7 +57,7 @@ header {
 
 h2 {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.4em;
     margin-bottom: 20px;
 }
 
@@ -68,20 +69,11 @@ h2 {
     height: 3px;
     background-color: #6f3824;
 }*/
-.about-me::before {
+.about-me::before, .about-me::after {
     display: block;
     margin: 40px auto;
     content: '';
-    max-width: 50%;
-    height: 2px;
-    background-color: #6f3824;
-}
-
-.about-me::after {
-    display: block;
-    margin: 40px auto;
-    content: '';
-    max-width: 50%;
+    max-width: 40%;
     height: 2px;
     background-color: #6f3824;
 }
@@ -106,8 +98,8 @@ h2 {
 }
 
 .project {
-    height: 200px;
-    width: 300px;
+    height: 250px;
+    width: 450px;
     background-color: silver;
     margin: 10px;
     overflow: hidden;
